@@ -1,0 +1,137 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+/* Headers (h1,h2,etc) have no default font-size or margin,
+   you'll want to define those yourself. */ 
+
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+h1,h2,h3,h4,h5,h6 {
+	line-height: 170%; 
+	font-weight: bold;
+}
+h1 {font-size: 2.0em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1.0em;}
+h6 {font-size: 0.8em;}
+
+/*
+ * Base layout from: http://www.ez-css.org
+ * */
+
+html {
+	background-color:#778899;
+}
+
+body {
+	text-align: center;
+}
+
+#wrapper {
+	width:800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	display: inline-block;
+}
+
+#header {
+}
+
+#menu {
+	background-color:#696969;
+	background-image:url('../imgaes/menu_background.gif');
+}
+
+#top-menu {
+	list-style-type:none;
+	margin:0;
+	padding:6px;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+#top-menu a{
+	color:#0b325a;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:1.05em;
+}
+
+#top-menu .web2py-menu-active a{
+}
+
+#top-menu .web2py-menu-active {
+	background-color:#778899;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+#top-menu a:hover {
+	background-image:url('../imgaes/menu_hover_background.gif');
+}
+
+#top-menu li,
+#header h1,
+#header h4 {
+	display:inline;
+}
+
+#top-menu li a:link,
+#top-menu li a:visited {
+	padding:6px;
+}
+
+#right_sidebar {
+	width:30%;
+	background-color:black;
+	color:white;
+	float:left;
+	margin-right: -1px;
+}
+
+#content
+{
+	padding:20px;
+	min-height:200px;
+}
+
+#footer {
+	color:white;
+	border-size:10px;
+	padding:5px;
+	height:29px;
+	font-size:0.8em;
+	text-align:center;
+	vertical-align:center;
+	background-image:url('../imgaes/foot_background.gif');
+}
+
+#header:after,
+#main:after,
+#footer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

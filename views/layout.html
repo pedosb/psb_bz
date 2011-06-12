@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="{{=T.accepted_language or 'en'}}">
+	<head>
+		<title>{{=response.title or request.application}}</title>
+		<meta name="application-name" content="{{=request.application}}" />	
+		<link rel="stylesheet" type="text/css" href="{{=URL('static','css/base.css')}}" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-19777658-3']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>{{=T('Pedro Batista')}}</h1>
+				<h4>{{=T('personal homepage')}}</h4>
+			</div>
+			<div id="menu">
+				{{=MENU(response.menu,_id='top-menu')}}
+			</div>
+			<div id="main">
+				{{if response.left_bar:}}
+					<div id="right_sidebar">
+						<ul>
+							<li>oi</li>
+							<li>ola</li>
+							<li>vem</li>
+						</ul>
+					</div>
+				{{pass}}
+				<div id="content">
+					{{include}}
+				</div>
+			</div>
+			<div id="footer">
+				Powered by: Web2py Developed by: Pedro Batista
+			</div>
+		</div>
+	</body>
+</html>
